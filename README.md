@@ -1,7 +1,5 @@
-<div align="center">
-  <h1>MID-LEVEL VISUAL REPRESENTATIONS Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</h1>
-  <br>
-</div>
+# `Mid-Level Visual Representations` Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</h1>
+
 
 What happens when robots leverage _visual priors_ during learning? They learn faster, generalize better, and achieve higher final performance.
 
@@ -24,13 +22,20 @@ Please see the website (http://perceptual.actor/) for more technical details. Th
 |:----:|:----:|:----:|
 | [![Online demos](https://github.com/alexsax/midlevel-reps/blob/helper/img/policy_explorer.png)](http://perceptual.actor/) | [<img src=https://github.com/alexsax/midlevel-reps/blob/helper/img/crazy_tb.png >](#running-our-experiments-) | Using ```visualpriors```! [![Try it yourself](https://github.com/alexsax/midlevel-reps/blob/helper/img/import_text.png)](#using-mid-level-perception-in-your-code-) |
 
-#### Paper
-
-[**Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies**, _Arxiv 2018_. Alexander Sax, Bradley Emi, Amir R. Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik.](https://arxiv.org/abs/1812.11971)
-
 <div align="center">
+  <p>Overview Video (6 min)</p>
   <a href=https://www.youtube.com/watch?v=HtefpenfxTQ&feature=youtu.be><img src="https://github.com/alexsax/midlevel-reps/blob/helper/img/youtube_screenshot.png?raw=true"  width="400px" /></a>
 </div>
+
+
+#### Paper
+
+[**Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies**,
+
+Arxiv 2018_.
+
+Alexander Sax, Bradley Emi, Amir R. Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik.](https://arxiv.org/abs/1812.11971)
+
 
 <br>
 
@@ -122,7 +127,7 @@ The following steps will guide you through training an agent to do the `local pl
 **An agent navigating to the goal.** The goal is shown in the middle panel, in green. The agent sees only the left and right panels. 
 
 
-#### Step 1) Install the docker (XX GB)
+#### Step 1) Install the docker (22 GB)
 In a shell, pull the docker to your local machine
 ``` bash
 docker pull activeperception/habitat:1.0
