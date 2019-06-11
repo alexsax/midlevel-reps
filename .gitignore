@@ -1,0 +1,182 @@
+*.pyc
+sandbox
+
+feature_selector/gibson/
+feature_selector/tnt/
+feature_selector/teas/
+feature_selector/taskonomy_data/
+
+taskonomy/taskbank/temp/
+taskonomy/taskbank
+taskonomy/
+taskonomy/pytorch/*
+
+gibson/gibson/midlevel-vision-assets.tar.gz.1
+
+data
+
+*.pyc
+*.pkl
+*.so
+*.egg-info/
+.DS_Store
+*.pth
+src/
+pw
+*.o
+*.ipynb
+*.out
+npz/
+*.npy
+dev/transfer.c
+*.jpg
+*.png
+*.bmp
+*.bak
+*.zip
+.*.swp
+
+
+# vscode
+.vscode/
+
+# Physics
+physics/*.txt
+physics/*.json
+# Physics assets
+physics/models
+
+
+*/events*
+0_VRDemoSettings.txt
+
+
+
+cnn_policy*
+*ppo_policy*
+checkpoint
+*.log
+*.log.*
+*.model.*
+examples/train/models/
+
+
+log_*/
+baselines/
+aws/
+monitor_*
+comparison/
+0.monitor.csvpaper/
+0.monitor.csv
+
+cvpr/
+gibson/cpp-household
+
+*.idea*
+
+# Plotting
+examples/scripts/plot*
+
+
+#pycharm
+.idea*
+
+#models
+nav_models
+
+gibson/assets
+*.pdf
+.vscode/
+build/
+dist/
+docs/_build/
+torchnet.egg-info/
+*/**/__pycache__
+*/**/*.pyc
+*.ipynb_checkpoints
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# DotEnv configuration
+.env
+
+# Database
+*.db
+*.rdb
+
+# Pycharm
+.idea
+
+# VS Code
+.vscode/
+
+# Spyder
+.spyproject/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+
+# exclude data from source control by default
+/data/
+
+# ViZDoom files
+_vizdoom*
+*.lmp
+
+# Mac OS-specific storage files
+.DS_Store
+.nfs*

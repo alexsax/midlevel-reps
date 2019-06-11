@@ -1,0 +1,43 @@
+envname: HuskyVisualNavigateEnv
+model_id: Beechwood
+target_orn: [0, 0, 0]
+target_pos: [-9.50, 3.4328, 0.4]
+initial_orn: [0, 0,0]
+initial_pos: [-7.50, 3.48, 0.15]
+fov: 1.57
+is_discrete: true
+ideal_position_control: true
+episode_length: 400
+use_filler: true
+display_ui: false
+show_diagnostics: false
+ui_num: 2
+ui_components: [RGB_FILLED, MAP]
+random:
+  random_initial_pose : true
+  random_target_pose : false
+  random_init_x_range: [0.0, 0.0]
+  random_init_y_range: [0.0, 0.0]
+  random_init_z_range: [0.0, 0.0]
+  random_init_rot_range: [-3.14, 3.14]
+
+output: [rgb_filled, depth, nonviz_sensor]
+resolution: 256
+speed:
+  timestep: 0.001
+  frameskip: 100
+
+mode: headless #gui|headless
+verbose: false
+
+x_boundary: [-11.0, -3.7]
+y_boundary: [1.0, 6.5]
+
+x_spawn_range: [-10.0, -4.0]
+y_spawn_range: [1.5, 4.0]
+
+x_target_range: [-9.2, -4.5]
+y_target_range: [2.0, 3.5]
+
+min_target_distance: 1.0
+max_target_distance: 3.0

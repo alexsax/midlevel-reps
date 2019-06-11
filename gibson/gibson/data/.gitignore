@@ -1,0 +1,7 @@
+node_modules/
+__pycache__/
+dataset/
+
+# Data
+*.log
+scripts/

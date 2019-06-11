@@ -1,0 +1,34 @@
+envname: HuskyCoordinateNavigateEnv
+model_id: Hanson
+target_orn: [0, 0, 0]
+target_pos: [0.0, 8.0, 0.3]
+initial_orn: [0, 0,0]
+initial_pos: [-4.2, -2.5, 0.3]
+fov: 1.57
+is_discrete: true
+ideal_position_control: true
+episode_length: 400
+use_filler: true
+display_ui: false
+show_diagnostics: false
+ui_num: 2
+ui_components: [RGB_FILLED, MAP]
+random:
+  random_initial_pose : true
+  random_target_pose : false
+  random_init_x_range: [0.0, 0.0]
+  random_init_y_range: [0.0, 0.0]
+  random_init_z_range: [0.0, 0.0]
+  random_init_rot_range: [-3.14, 3.14]
+
+output: [rgb_filled, depth, nonviz_sensor]
+resolution: 256
+speed:
+  timestep: 0.001
+  frameskip: 100
+
+mode: headless #gui|headless
+verbose: false
+
+target_distance_mu: 5.0
+target_distance_sigma: 2.0

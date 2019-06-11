@@ -1,0 +1,36 @@
+envname: HuskyVisualExplorationEnv
+model_id: Globe
+target_orn: [0, 0, 1.57]
+target_pos: [-9.70, 3.3328, 0.15]
+initial_orn: [0, 0, -2.90]
+initial_pos: [-2, 2, 0.5]
+fov: 1.571
+is_discrete: true
+ideal_position_control: true
+episode_length: 1000
+use_filler: true
+display_ui: false
+show_diagnostics: false
+ui_num: 3
+ui_components: [RGB_FILLED, MAP, DEPTH]
+
+cell_size: 1.0
+map_x_range: [-15.0, 15.0]
+map_y_range: [-15.0, 15.0]
+
+random:
+  random_initial_pose : true
+  random_target_pose : false
+  random_init_x_range: [0.0, 0.0]
+  random_init_y_range: [0.0, 0.0]
+  random_init_z_range: [0.0, 0.0]
+  random_init_rot_range: [-3.14, 3.14]
+
+output: [rgb_filled, depth, nonviz_sensor]
+resolution: 128
+speed:
+  timestep: 0.001
+  frameskip: 100
+
+mode: headless #gui|headless
+verbose: false

@@ -1,0 +1,25 @@
+numba
+scikit-image
+numpy
+torch==1.0.1.post2
+torchvision==0.2.1
+gym==0.10.9
+# vizdoom  # not sure if really need
+torchsummary
+visdom
+ipdb
+sacred
+matplotlib
+tensorflow==1.5.0  # not sure if really needed
+psutil
+sklearn
+tensorboard==1.12
+tensorboardX
+watchdog
+pytest==3.4.2
+sacred
+jupyterlab
+ipykernel
+rtree  # add with conda install
+gitpython
+moviepy

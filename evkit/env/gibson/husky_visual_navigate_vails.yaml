@@ -1,0 +1,43 @@
+envname: HuskyVisualNavigateEnv
+model_id: Vails
+target_orn: [0, 0, 0]
+target_pos: [-9.50, 3.4328, 0.4]
+initial_orn: [0, 0,0]
+initial_pos: [-6, -1, 0.2]
+fov: 1.57
+is_discrete: true
+ideal_position_control: true
+episode_length: 400
+use_filler: true
+display_ui: false
+show_diagnostics: false
+ui_num: 2
+ui_components: [RGB_FILLED, MAP]
+random:
+  random_initial_pose : true
+  random_target_pose : false
+  random_init_x_range: [0.0, 0.0]
+  random_init_y_range: [0.0, 0.0]
+  random_init_z_range: [0.0, 0.0]
+  random_init_rot_range: [-3.14, 3.14]
+
+output: [rgb_filled, depth, nonviz_sensor]
+resolution: 128
+speed:
+  timestep: 0.001
+  frameskip: 100
+
+mode: headless #gui|headless
+verbose: false
+
+x_boundary: [-4.0, 1.5]
+y_boundary: [-15.0, 1.5]
+
+x_spawn_range: [-2.5, 0.5]
+y_spawn_range: [-10.0, 0.0]
+
+x_target_range: [-2.3, 0.3]
+y_target_range: [-9.8, -0.2]
+
+min_target_distance: 1.5
+max_target_distance: 3.5
