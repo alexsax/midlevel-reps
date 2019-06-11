@@ -30,7 +30,7 @@ Please see the website (http://perceptual.actor/) for more technical details. Th
 
 #### Paper
 
-[**Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies**](https://arxiv.org/abs/1812.11971)<br>
+[**Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies**,](https://arxiv.org/abs/1812.11971)<br>
 _Arxiv 2018_.<br>
 Alexander Sax, Bradley Emi, Amir R. Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik.
 
