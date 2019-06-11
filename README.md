@@ -148,25 +148,26 @@ screen -S visdom_server -p 0 -X stuff "tensorboard --logdir .^M"
 ```
 
 #### Step 3) Run the experiment
-Lastly, we just need to start the experiment. Let's try training an agent that uses predicted surface normals as inputs. We'll use only 1 training and 1 val process since we're just trying to visualize the results. 
+Lastly, we just need to start the experiment. Let's try training an agent that uses predicted **surface normals** as inputs. We'll use only 1 training and 1 val process since we're just trying to visualize the results. 
 ```
-python -m scripts.train_rl /tmp/midlevel_logs/normals_agent run_training with uuid=normals cfg_habitat taskonomy_decoding  cfg.saving.log_interval=1 cfg.env.num_processes=2 cfg.env.num_val_processes=1
-```
-
-If you want to compare this to an agent trained from scratch, you can swap this easily with:
-```
-python -m scripts.train_rl /tmp/midlevel_logs/scratch run_training with uuid=scratch cfg_habitat scratch  cfg.saving.log_interval=1 cfg.env.num_processes=2 cfg.env.num_val_processes=1
+python -m scripts.train_rl /tmp/midlevel_logs/normals_agent run_training with uuid=normals cfg_habitat taskonomy_decoding  cfg.saving.log_interval=10 cfg.env.num_processes=2 cfg.env.num_val_processes=1
 ```
 
-Or a blinded agent (no visual input)
+If you want to compare this to an agent trained from **scratch**, you can swap this easily with:
 ```
-python -m scripts.train_rl /tmp/midlevel_logs/blind run_training with uuid=blind cfg_habitat blind  cfg.saving.log_interval=1 cfg.env.num_processes=2 cfg.env.num_val_processes=1
+python -m scripts.train_rl /tmp/midlevel_logs/scratch run_training with uuid=scratch cfg_habitat scratch  cfg.saving.log_interval=10 cfg.env.num_processes=2 cfg.env.num_val_processes=1
 ```
 
-Or using the Max-Coverage Min-Distance Featureset
+Or a **blinded** agent (no visual input)
 ```
-python -m scripts.train_rl /tmp/midlevel_logs/max_coverage run_training with uuid=blind cfg_habitat max_coverage_perception  cfg.saving.log_interval=1 cfg.env.num_processes=2 cfg.env.num_val_processes=1
+python -m scripts.train_rl /tmp/midlevel_logs/blind run_training with uuid=blind cfg_habitat blind  cfg.saving.log_interval=10 cfg.env.num_processes=2 cfg.env.num_val_processes=1
 ```
+
+Or using the **Max-Coverage Min-Distance Featureset**
+```
+python -m scripts.train_rl /tmp/midlevel_logs/max_coverage run_training with uuid=blind cfg_habitat max_coverage_perception  cfg.saving.log_interval=10 cfg.env.num_processes=2 cfg.env.num_val_processes=1
+```
+**Note**: You might see some NaNs in the first iteration. Not to worry! This is probably because the first logging occurs before any episodes have finished.
 
 You can explore more configuration options in `configs/habitat.py`! We used [SACRED](https://sacred.readthedocs.io/en/latest/) for managing experiments, so any of these experiments can be easily modified from the command line.
 
