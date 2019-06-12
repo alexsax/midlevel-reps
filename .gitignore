@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+*.pyc
+
+.DS_Store
+
+test*.png
+test.ipynb
+test.py
+
+
+dist/
+visualpriors.egg-info
+MANIFEST
+
