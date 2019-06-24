@@ -1,5 +1,6 @@
 # `Mid-Level Visual Representations` Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</h1>
 
+#### Winner of [CVPR19 Habitat Embodied Agents Challenge](https://ai.facebook.com/blog/open-sourcing-ai-habitat-an-simulation-platform-for-embodied-ai-research/)
 
 What happens when robots leverage _visual priors_ during learning? They learn faster, generalize better, and achieve higher final performance.
 
