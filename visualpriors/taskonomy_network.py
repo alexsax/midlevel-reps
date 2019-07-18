@@ -37,9 +37,9 @@ CHANNELS_TO_TASKS = {
     1: ['colorization', 'edge_texture', 'edge_occlusion',  'keypoints3d', 'keypoints2d', 'reshading', 'depth_zbuffer', 'depth_euclidean', ],
     2: ['curvature', 'principal_curvature'],
     3: ['autoencoding', 'denoising', 'normal', 'inpainting', 'rgb', 'normals'],
-    128: ['segment_unsup2d', 'segment_unsup25d'],
+    17: ['segment_semantic'],
+    64: ['segment_unsup2d', 'segment_unsup25d'],
     1000: ['class_object'],
-    None: ['segment_semantic']
 }
 
 
