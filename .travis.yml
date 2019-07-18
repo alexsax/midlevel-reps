@@ -1,4 +1,5 @@
 language: python
+script: echo notest
 deploy:
   provider: pypi
   user: sashasax
