@@ -20,9 +20,9 @@ This repository includes [code](https://github.com/alexsax/midlevel-reps/tree/ma
 Please see the website (http://perceptual.actor/) for more technical details. This repository is intended for distribution of the code, environments, and installation/running instructions.
 
 #### See more mid-level perception results and then try mid-level perception out for yourself
-| [Online demos](http://perceptual.actor) | [Run our examples](#running-our-experiments-) | [Try it yourself]() | 
+| [Online demos](http://perceptual.actor/policy_explorer/) | [Run our examples](#running-our-experiments-) | [Try it yourself]() | 
 |:----:|:----:|:----:|
-| [![Online demos](https://github.com/alexsax/midlevel-reps/blob/helper/img/policy_explorer.png)](http://perceptual.actor/) | [<img src=https://github.com/alexsax/midlevel-reps/blob/helper/img/crazy_tb.png >](#running-our-experiments-) | Using ```visualpriors```! [![Try it yourself](https://github.com/alexsax/midlevel-reps/blob/helper/img/import_text.png)](#using-mid-level-perception-in-your-code-) |
+| [![Online demos](https://github.com/alexsax/midlevel-reps/blob/helper/img/policy_explorer.png)](http://perceptual.actor/policy_explorer/) | [<img src=https://github.com/alexsax/midlevel-reps/blob/helper/img/crazy_tb.png >](#running-our-experiments-) | Using ```visualpriors```! [![Try it yourself](https://github.com/alexsax/midlevel-reps/blob/helper/img/import_text.png)](#using-mid-level-perception-in-your-code-) |
 
 <div align="center">
   <p>Overview Video (6 min)</p>
@@ -30,12 +30,15 @@ Please see the website (http://perceptual.actor/) for more technical details. Th
 </div>
 
 
-#### Paper
+#### Papers
 
 [**Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies**,](https://arxiv.org/abs/1812.11971)<br>
 _Arxiv 2018_.<br>
-Alexander Sax, Bradley Emi, Amir R. Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik.
+Alexander Sax, Bradley Emi, Amir Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik.
 
+[**Learning to Navigate Using Mid-Level Visual Priors**,](https://arxiv.org/pdf/1912.11121.pdf)<br>
+_CoRL 2019_.<br>
+Alexander Sax, Jeffrey O. Zhang, Bradley Emi, Amir Zamir, Silvio Savarese, Leonidas Guibas, Jitendra Malik.
 
 <br>
 
