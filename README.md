@@ -216,10 +216,14 @@ In addition to using our dockers, we provide a simple way to use mid-level visio
 
 ### Installing _visualpriors_
 
-The simplest way to install the `visualpriors` package is via pip. You can install 
+**The simplest way** to install the `visualpriors` package is via pip: `pip install visualpriors`
 
-1) **From PyPi:** `pip install visualpriors`
-2) **From this repository:** `pip install https://github.com/alexsax/midlevel-reps/archive/visualpriors-v0.3.1.zip`
+If you would prefer to have the source code, then you can clone this repo and install locally via:
+```bash
+git clone --single-branch --branch visualpriors git@github.com:alexsax/midlevel-reps.git
+cd midlevel-reps
+pip install -e .
+```
 
 <br>
 
