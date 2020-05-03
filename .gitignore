@@ -7,7 +7,7 @@
 test*.png
 test.ipynb
 test.py
-
+deploy.sh
 
 dist/
 visualpriors.egg-info
