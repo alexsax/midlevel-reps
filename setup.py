@@ -30,7 +30,7 @@ if __name__ == "__main__":
     setup(
       name =         DISTNAME,
       packages =     [DISTNAME],
-      version =      '0.3.1',
+      version =      '0.3.3',
       license=       'MIT',
       description =  'The official implementation of visual priors from the paper Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies. Arxiv preprint 2018.',   
       long_description_content_type='text/markdown',
@@ -57,5 +57,6 @@ if __name__ == "__main__":
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
       ],
     )

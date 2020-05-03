@@ -8,4 +8,5 @@ deploy:
   on:
     branch: visualpriors
     tags: true
-
+install:
+  - python setup.py -q install

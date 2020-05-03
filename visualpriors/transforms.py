@@ -42,7 +42,7 @@ def max_coverage_featureset_transform(img, k=4, device=default_device):
         Outputs:
             shape  (batch_size, 8*k, 16, 16)
     '''
-    return VisualPrior.max_coverage_transform(img, feature_tasks, device)
+    return VisualPrior.max_coverage_transform(img, k, device)
 
 def feature_readout(img, feature_task='normal', device=default_device):
     '''
