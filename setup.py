@@ -30,7 +30,7 @@ if __name__ == "__main__":
     setup(
       name =         DISTNAME,
       packages =     [DISTNAME],
-      version =      '0.3.2',
+      version =      '0.3.4',
       license=       'MIT',
       description =  'The official implementation of visual priors from the paper Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies. Arxiv preprint 2018.',   
       long_description_content_type='text/markdown',
