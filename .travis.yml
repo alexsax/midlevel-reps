@@ -9,4 +9,4 @@ deploy:
     branch: visualpriors
     tags: true
 install:
-  - python setup.py -q install
+  -  pip install --user -q -r requirements.txt
