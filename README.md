@@ -317,10 +317,9 @@ This section will contain an overview of `evkit`, which is currently available i
 ### Citation
 
 If you find this repository or toolkit useful, then please cite:
-```bash
-@inproceedings{midLevelReps2018,
- title={Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies.},
- author={Alexander Sax and Bradley Emi and Amir R. Zamir and Leonidas J. Guibas and Silvio Savarese and Jitendra Malik},
- year={2018},
-}
-```
+
+    @inproceedings{midLevelReps2018,
+     title={Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies.},
+     author={Alexander Sax and Bradley Emi and Amir R. Zamir and Leonidas J. Guibas and Silvio Savarese and Jitendra Malik},
+     year={2018},
+    }
