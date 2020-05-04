@@ -176,11 +176,6 @@ python -m scripts.train_rl /tmp/midlevel_logs/max_coverage run_training with uui
 
 You can explore more configuration options in `configs/habitat.py`! We used [SACRED](https://sacred.readthedocs.io/en/latest/) for managing experiments, so any of these experiments can be easily modified from the command line.
 
-
-**Citation:** If you use experiments from the Habitat docker, then please cite <HABITAT PAPER>:
-```
-```
-
 <br>
 
 ### Experiments in [Gibson](https://github.com/StanfordVL/GibsonEnv) and [VizDoom](https://github.com/mwydmuch/ViZDoom) (Under Construction!)
@@ -322,7 +317,7 @@ This section will contain an overview of `evkit`, which is currently available i
 ### Citation
 
 If you find this repository or toolkit useful, then please cite:
-```
+```bash
 @inproceedings{midLevelReps2018,
  title={Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies.},
  author={Alexander Sax and Bradley Emi and Amir R. Zamir and Leonidas J. Guibas and Silvio Savarese and Jitendra Malik},
