@@ -216,7 +216,10 @@ In addition to using our dockers, we provide a simple way to use mid-level visio
 
 ### Installing _visualpriors_
 
-**The simplest way** to install the `visualpriors` package is via pip: `pip install visualpriors`
+**The simplest way** to install the `visualpriors` package is via pip: 
+```bash
+pip install visualpriors
+```
 
 If you would prefer to have the source code, then you can clone this repo and install locally via:
 ```bash
