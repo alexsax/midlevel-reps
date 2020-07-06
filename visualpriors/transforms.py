@@ -1,8 +1,9 @@
-from .taskonomy_network import TaskonomyEncoder, TaskonomyDecoder, TaskonomyNetwork, TASKONOMY_PRETRAINED_URLS, TASKS_TO_CHANNELS
+from .taskonomy_network import TaskonomyEncoder, TaskonomyDecoder, TaskonomyNetwork, TASKONOMY_PRETRAINED_URLS, TASKS_TO_CHANNELS, PIX_TO_PIX_TASKS, DONT_APPLY_TANH_TASKS
 import multiprocessing.dummy as mp
 import torch
 
 default_device = 'cuda' if torch.cuda.is_available() else 'cpu'
+TASKONOMY_LOCATION = 'https://github.com/StanfordVL/taskonomy/tree/master/taskbank'
 
 def representation_transform(img, feature_task='normal', device=default_device):
     '''
@@ -219,10 +220,14 @@ class VisualPriorPredictedLabel(object):
         for feature_task in feature_tasks:
             if feature_task not in cls.feature_task_to_net:
                 if feature_task not in TASKS_TO_CHANNELS:
-                    raise NotImplementedError('Task {} not implemented in VisualPriorPredictedLabel'.format(feature_task))
+                    raise NotImplementedError('Task {} not implemented in VisualPriorPredictedLabel. Recommended to get predictions from {}'.format(feature_task, TASKONOMY_LOCATION))
+                is_decoder_mlp = (feature_task not in PIX_TO_PIX_TASKS)
+                apply_tanh = (feature_task not in DONT_APPLY_TANH_TASKS)
                 net_paths_to_load.append((TASKS_TO_CHANNELS[feature_task],
                                           TASKONOMY_PRETRAINED_URLS[feature_task + '_encoder'],
-                                          TASKONOMY_PRETRAINED_URLS[feature_task + '_decoder']))
+                                          TASKONOMY_PRETRAINED_URLS[feature_task + '_decoder'],
+                                          is_decoder_mlp, 
+                                          apply_tanh))
                 feature_tasks_to_load.append(feature_task)
         nets = cls._load_networks(net_paths_to_load)
         for feature_task, net in zip(feature_tasks_to_load, nets):
@@ -231,11 +236,13 @@ class VisualPriorPredictedLabel(object):
     @classmethod
     def _load_networks(cls, network_paths, model_dir=None, progress=True):
         nets = []
-        for out_channels, encoder_path, decoder_path in network_paths:
+        for out_channels, encoder_path, decoder_path, is_decoder_mlp, apply_tanh in network_paths:
             nets.append(TaskonomyNetwork(
                     out_channels=out_channels,
                     load_encoder_path=encoder_path,
                     load_decoder_path=decoder_path,
                     model_dir=model_dir,
+                    is_decoder_mlp=is_decoder_mlp,
+                    apply_tanh=apply_tanh,
                     progress=progress))
         return nets
