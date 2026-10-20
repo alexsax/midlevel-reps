@@ -25,7 +25,7 @@ The agent is given RGB frames and the vector to a nonvisual target. It is tasked
 
 ### Paper
 **["Mid Level Visual Features Improve Sample-Efficiency and Generalization for Active Tasks"](http://perceptual/actor)**
-**["Gibson Env: Real-World Perception for Embodied Agents"](http://gibson.vision/)**, in **CVPR 2018 [Spotlight Oral]**.
+**["Gibson Env: Real-World Perception for Embodied Agents"](http://gibsonenv.stanford.edu/)**, in **CVPR 2018 [Spotlight Oral]**.
 
 ### Installation
 
