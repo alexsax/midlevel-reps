@@ -102,7 +102,7 @@ class_object          egomotion                nonfixated_pose         segment_u
 class_scene           fixated_pose             normal                  segment_semantic      
 denoising             inpainting               point_matching          vanishing_point
 ```
-A description of each of the features is contained in the supplementary of [Taskonomy](http://taskonomy.vision).
+A description of each of the features is contained in the supplementary of [Taskonomy](http://taskonomy.stanford.edu).
 
 <br>
 
@@ -282,7 +282,7 @@ class_object          egomotion                nonfixated_pose         segment_u
 class_scene           fixated_pose             normal                  segment_semantic      
 denoising             inpainting               point_matching          vanishing_point
 ```
-A description of each of the features is contained in the supplementary of [Taskonomy](http://taskonomy.vision).
+A description of each of the features is contained in the supplementary of [Taskonomy](http://taskonomy.stanford.edu).
 
 
 **4) You can even use multiple features at once:**
